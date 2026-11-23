@@ -58,8 +58,6 @@
 
 ## 截图
 
-![主题切换预览](docs/preview.gif)
-
 ![全部 12 款风格](docs/all-themes.png)
 
 ![终端 Terminal — 最初 vs 目前](docs/terminal-before-after.png)

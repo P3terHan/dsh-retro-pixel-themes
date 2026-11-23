@@ -39,8 +39,6 @@ The host half is a no-op (`index.js`); everything visible lives in `client.js`.
 
 ## Screenshots
 
-![Theme switching preview](docs/preview.gif)
-
 ![All 12 themes](docs/all-themes.png)
 
 ![Terminal — initial vs current](docs/terminal-before-after.png)
