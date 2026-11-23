@@ -1,0 +1,63 @@
+{
+  "name": "dsh-themes",
+  "version": "0.3.0",
+  "description": "复古像素主题（Retro Pixel Themes）—— 在左侧边栏加入一个主题入口，可用十二种整体风格为整个应用换肤，含护眼暖纸色与七款像素风（终端、真实琥珀 CRT、冰蓝、品红、复古黑白电视、掌机、暮色沙丘）。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "icon.svg",
+    "LICENSE",
+    "docs",
+    "README.en.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "license": "MIT",
+  "author": "P3terHan (https://github.com/P3terHan)",
+  "homepage": "https://github.com/P3terHan/dsh-retro-pixel-themes#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P3terHan/dsh-retro-pixel-themes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/P3terHan/dsh-retro-pixel-themes/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "theme",
+    "themes",
+    "retro",
+    "pixel",
+    "pixel-art",
+    "terminal",
+    "crt",
+    "synthwave",
+    "appearance"
+  ]
+}

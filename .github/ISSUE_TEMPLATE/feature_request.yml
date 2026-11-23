@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a new theme or improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Share your idea — especially retro / pixel / CRT style directions.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: inspiration
+    attributes:
+      label: References / inspiration
+      description: Screenshots, palettes, device references, etc.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - New theme
+        - Improve existing theme
+        - Readability
+        - Packaging / install
+        - Other

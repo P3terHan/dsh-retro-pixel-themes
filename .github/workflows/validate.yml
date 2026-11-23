@@ -1,0 +1,29 @@
+name: validate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate package metadata
+        run: |
+          node -e "const p=require('./package.json');for(const k of ['name','version','main','exports','files','dsh'])if(!(k in p))throw new Error('missing '+k);if(!p.dsh.client||!p.dsh.bundle)throw new Error('missing dsh.bundle / dsh.client');console.log('package.json ok:',p.name,p.version)"
+      - name: Validate JSON files
+        run: |
+          node -e "const fs=require('fs');for(const f of ['package.json','locale/en.json','locale/zh.json']){JSON.parse(fs.readFileSync(f,'utf8'));console.log('ok',f)}"
+      - name: Syntax check JavaScript
+        run: |
+          node --check index.js
+          node --check client.js
+      - name: Check bundle patch exists
+        run: test -f cordis.patch.yml && echo "cordis.patch.yml ok"
+      - name: npm pack dry run
+        run: npm pack --dry-run

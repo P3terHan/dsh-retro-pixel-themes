@@ -1,0 +1,4 @@
+# Bundle layer: insert this plugin into the running profile.
+- insert:
+    - id: themes
+      name: 'dsh-themes'

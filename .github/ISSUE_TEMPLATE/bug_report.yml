@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a problem with a theme or the plugin
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Retro Pixel Themes!
+  - type: textarea
+    id: describe
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Themes
+        2. Select ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: DSH version, OS, theme selected, other plugins.
+      placeholder: "DSH 0.2.x · Windows 11 · Theme: Terminal"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / logs
+      description: Drag images here if possible.
