@@ -17,7 +17,7 @@ Open it to restyle the entire application with one of twelve visual styles (seve
 | **Ice CRT** | Cool cyan CRT glow |
 | **Synthwave** | Hot magenta vaporwave neon |
 | **Retro TV** | Old black-and-white television: grayscale palette, thick scanlines, film grain, rounded CRT frame |
-| **Pixel Boy** | Game Boy DMG green LCD: dot-matrix grid, scanlines, pixel font |
+| **Pixel Boy** | Pale-green handheld LCD: scanlines, pixel font |
 | **Sunset Dune** | Dusk gradient of amber, rose and violet — soft warm glow |
 
 ## How it works
