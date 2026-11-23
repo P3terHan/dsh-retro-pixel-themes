@@ -1,4 +1,4 @@
-# dsh-themes（复古像素主题）
+# dsh-retro-pixel-themes（复古像素主题）
 
 > [English README](README.en.md)
 
@@ -72,8 +72,8 @@
 
    ```json
    {
-     "dependencies": { "dsh-themes": "github:P3terHan/dsh-retro-pixel-themes" },
-     "dsh": { "profile": { "bundles": ["...已有...", "dsh-themes"] } }
+     "dependencies": { "dsh-retro-pixel-themes": "github:P3terHan/dsh-retro-pixel-themes" },
+     "dsh": { "profile": { "bundles": ["...已有...", "dsh-retro-pixel-themes"] } }
    }
    ```
 

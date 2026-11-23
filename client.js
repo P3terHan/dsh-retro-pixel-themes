@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: 'dsh-themes',
+  id: 'dsh-retro-pixel-themes',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
@@ -789,7 +789,7 @@ window.__ModuleLoader__.load({
 
         ctx.effect(function () {
           const tag = document.createElement('style');
-          tag.setAttribute('data-dsh-themes', '');
+          tag.setAttribute('data-dsh-retro-pixel-themes', '');
           tag.textContent = CSS + PIXEL_EXTRA_CSS;
           document.head.appendChild(tag);
           return function () { tag.remove(); };

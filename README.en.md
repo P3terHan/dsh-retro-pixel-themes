@@ -1,4 +1,4 @@
-# dsh-themes · Retro Pixel Themes
+# dsh-retro-pixel-themes · Retro Pixel Themes
 
 > [中文说明](README.md)
 
@@ -53,8 +53,8 @@ More: [Amber CRT & Sunset Dune](docs/amber-sunset.png) · [Pixel Boy](docs/pixel
 
    ```json
    {
-     "dependencies": { "dsh-themes": "github:P3terHan/dsh-retro-pixel-themes" },
-     "dsh": { "profile": { "bundles": ["...existing...", "dsh-themes"] } }
+     "dependencies": { "dsh-retro-pixel-themes": "github:P3terHan/dsh-retro-pixel-themes" },
+     "dsh": { "profile": { "bundles": ["...existing...", "dsh-retro-pixel-themes"] } }
    }
    ```
 
